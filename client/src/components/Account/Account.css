@@ -1,0 +1,94 @@
+.account-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.horizontal-navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.horizontal-navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.horizontal-navbar a:hover {
+    text-decoration: underline;
+}
+
+.horizontal-navbar a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.account-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.account-content h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.account-table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.account-table th,
+.account-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.account-table th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+}
+
+.account-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.account-table input {
+    width: calc(100% - 20px);
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.save-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.save-button:hover {
+    background-color: #45a049;
+}
+
+.save-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
